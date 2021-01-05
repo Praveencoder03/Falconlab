@@ -986,13 +986,16 @@ File: scss
      display: none; }
  
  .page-wrapper {
-   background: #f4f6f9;
+   border-bottom-width: 0% !important;
+  background: #292929;
    padding-bottom: 0%;
    }
  
  .container-fluid {
-   padding-left: 48px !important;
-   padding: 25px 25px; }
+   /* padding-right: auto !important;
+   padding-left: auto !important; */
+   border-bottom-width: 0% !important;
+   padding: 25px 30px 25px 30px !important;  }
  
  .card {
    margin-bottom: 30px; }
@@ -5631,6 +5634,7 @@ File: scss
  @media (max-width: 1023px) {
    .page-wrapper {
      margin-left: 70px;
+     background: #292929 !important;
      -webkit-transition: 0.2s ease-in;
      -o-transition: 0.2s ease-in;
      transition: 0.2s ease-in; }
@@ -5676,6 +5680,7 @@ File: scss
      display: inline-block;
      line-height: 40px; }
    .mini-sidebar .page-wrapper {
+    background: #292929 !important;
      margin-left: 70px; }
    .flex-wrap {
      -ms-flex-wrap: nowrap !important;
@@ -5687,7 +5692,7 @@ File: scss
   ============================================================== */
  @media (max-width: 767px) {
    .container-fluid {
-     padding: 25px 15px 25px 15px; }
+     padding: 25px 25px 25px 25px; }
    /*Header*/
    .topbar {
      position: fixed;
@@ -5725,6 +5730,7 @@ File: scss
      overflow: auto; }
    /*Sidebar and wrapper*/
    .mini-sidebar .page-wrapper {
+    background: #292929 !important;
      margin-left: 0px;
      padding-top: 70px; }
    .comment-text .comment-footer .action-icons {
@@ -5821,7 +5827,7 @@ File: scss
  margin-left: 15%;
  margin-bottom: 5%;
      }
-     .h2-1-home{
+     .home-h3{
        font-style: normal;
  font-weight: bold;
  font-size: 24px;
@@ -5838,7 +5844,7 @@ File: scss
        text-decoration: none;
        color: #5720b6;
      }
-     .h2-2-home{
+     .h3-2-home{
        font-style: normal;
  font-weight: bold;
  font-size: 24px;
@@ -5855,7 +5861,7 @@ File: scss
        text-decoration: none;
        color: #1492c4;
      }
-     .h2-3-home{
+     .h3-3-home{
        font-style: normal;
  font-weight: bold;
  font-size: 24px;
@@ -5902,9 +5908,7 @@ File: scss
      .sidebar-schedule:hover{
        color: #c04c17 !important;
      }
-     .img-drone{
-      margin-left: 8%;
-     }
+    
      .hr-1{
        border: 1px solid #424242;
        width: 80%;
@@ -5914,8 +5918,9 @@ File: scss
        background: #424242;
        border-radius: 6px;
        padding: 3%;
+       
      }
-     .active-about:hover{
+     .active:hover{
        text-decoration: none !important;
      }
    .waves-dark{
@@ -5939,10 +5944,7 @@ File: scss
      font-size: 32px;
      font-family: 'Inter';
    }
-   .home-h3{
-     font-weight: bold;  
-     color: #FF6F2C;
-   }
+
    .home-p1{
      font-family: 'Inter';
      font-style: normal;
@@ -5950,7 +5952,7 @@ File: scss
    font-size: 17px;
    color: #D1D1D1;
    }
-   .home-h1{
+   .home-h2{
      font-family: 'Inter';
      color: #999999;
      font-style: normal;
@@ -6053,4 +6055,18 @@ File: scss
    }
    .about-email-link:hover{
      color: #b44816;
+   }
+   /* .img-triangle{
+     margin-right: 5%;
+   } */
+   .showme-arrow{
+     color: #18BFFF;
+
+   }
+   .home-h1{
+    font-family: 'poppins';
+    color: #FFFFFF;
+    font-style: normal;
+font-weight: bold;
+font-size: 32px;
    }
