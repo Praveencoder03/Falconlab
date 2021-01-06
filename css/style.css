@@ -5828,12 +5828,14 @@ File: scss
  margin-bottom: 5%;
      }
      .home-h3{
+      font-family: 'poppins';
        font-style: normal;
  font-weight: bold;
  font-size: 24px;
        color: #8B46FF;
      }
      .needthis-link{
+      font-family: 'poppins';
        font-style: normal;
        font-weight: bold;
        font-size: 14px;
@@ -5845,13 +5847,14 @@ File: scss
        color: #5720b6;
      }
      .h3-2-home{
+      font-family: 'poppins';
        font-style: normal;
  font-weight: bold;
  font-size: 24px;
        color: #18BFFF;
      }
      .showHow-link{
-       
+      font-family: 'poppins';
        font-style: normal;
  font-weight: bold;
  font-size: 14px;
@@ -5862,13 +5865,14 @@ File: scss
        color: #1492c4;
      }
      .h3-3-home{
+      font-family: 'poppins';
        font-style: normal;
  font-weight: bold;
  font-size: 24px;
        color: #FCB400;
      }
      .Makeit-link{
-       
+      font-family: 'poppins';
        font-style: normal;
        font-weight: bold;
        font-size: 14px;
@@ -5881,7 +5885,7 @@ File: scss
      .left-sidebar {
        border-right: 2px solid #424242;
        position: absolute;
-       width: 240px;
+       width: 200px;
        height: 100%;
        top: 0px;
        z-index: 20;
@@ -5953,9 +5957,9 @@ File: scss
    color: #D1D1D1;
    }
    .home-h2{
-     font-family: 'Inter';
+     font-family: 'poppins';
      color: #999999;
-     font-style: normal;
+     font-style: bold;
    font-weight: bolder;  
    font-size: 32px;
    line-height: 48px;
