@@ -79,7 +79,7 @@ File: scss
  
  a:hover,
  a:focus {
-   text-decoration: none; }
+   text-decoration: none !important; }
  
  a.link {
    color: #455a64; }
@@ -854,7 +854,6 @@ File: scss
      height: 7px;
      border-width: 1px 0 0 1px;
      border-style: solid;
-     border-color: #687384;
      right: 1em;
      -webkit-transform: rotate(135deg) translate(0, -50%);
      -ms-transform: rotate(135deg) translate(0, -50%);
@@ -992,10 +991,10 @@ File: scss
    }
  
  .container-fluid {
-   /* padding-right: auto !important;
-   padding-left: auto !important; */
+   margin-left: 240px;
+   padding-left:11px !important;
    border-bottom-width: 0% !important;
-   padding: 25px 30px 25px 30px !important;  }
+   padding: 25px 20px 25px 20px !important;  }
  
  .card {
    margin-bottom: 30px; }
@@ -5889,10 +5888,21 @@ File: scss
        height: 100%;
        top: 0px;
        z-index: 20;
-       padding-top: 70px;
+       padding-top: 10px;
        background: #292929 !important;
        -webkit-box-shadow: 1px 0px 20px rgba(43, 30, 30, 0.555);
        box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08); }
+
+       .sidebar-list{
+        color: #757575;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        text-align:left;
+         justify-content: center;
+       }
      .sidebar-talk{
        border-radius: 6px;
        color: whitesmoke;
@@ -5912,21 +5922,31 @@ File: scss
      .sidebar-schedule:hover{
        color: #c04c17 !important;
      }
+     .schedule-btn{
+      background: #FF6F2C;
+      color: whitesmoke;
+      font-family: 'Inter';
+      border-radius: 6px;
+      padding: 4px 16px;
+      justify-content: center;
+    }
     
      .hr-1{
        border: 1px solid #424242;
        width: 80%;
      }
      .active-about{
+       color: white;
        margin-left: 10%;
        background: #424242;
        border-radius: 6px;
        padding: 3%;
+       text-decoration: none !important;
        
      }
-     .active:hover{
+     /* .active:hover{
        text-decoration: none !important;
-     }
+     } */
    .waves-dark{
      margin-top: 5%;
      margin-left: 10%;
@@ -5948,21 +5968,23 @@ File: scss
      font-size: 32px;
      font-family: 'Inter';
    }
-
+   
    .home-p1{
      font-family: 'Inter';
      font-style: normal;
    font-weight: 500;
+   line-height: 28px;
    font-size: 17px;
    color: #D1D1D1;
    }
    .home-h2{
+     margin-top: 10%;
      font-family: 'poppins';
      color: #999999;
      font-style: bold;
    font-weight: bolder;  
    font-size: 32px;
-   line-height: 48px;
+   line-height: 56px;
    }
    .footer{
      position: relative;
@@ -6031,7 +6053,7 @@ File: scss
    }
    
    .sidenav a:hover {
-     color: #f1f1f1;
+     color: #e7e5e5;
    }
    
    .sidenav .closebtn {
@@ -6072,5 +6094,5 @@ File: scss
     color: #FFFFFF;
     font-style: normal;
 font-weight: bold;
-font-size: 32px;
+font-size: 64px;
    }
