@@ -5632,7 +5632,6 @@ File: scss
  
  @media (max-width: 1023px) {
    .page-wrapper {
-     margin-left: 70px;
      background: #292929 !important;
      -webkit-transition: 0.2s ease-in;
      -o-transition: 0.2s ease-in;
@@ -6026,7 +6025,10 @@ File: scss
    display: flex;
    align-items: center;
  }
- 
+ .nav-link:hover{
+    color: #FF6F2C;
+ }
+
  /* side-transition */
   
      
