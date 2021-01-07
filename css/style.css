@@ -5900,7 +5900,7 @@ File: scss
         font-size: 14px;
         line-height: 18px;
         text-align:left;
-         justify-content: center;
+        justify-content: center;
        }
      .sidebar-talk{
       font-family: 'Inter';
@@ -6010,7 +6010,11 @@ File: scss
    }
  
    /* Mobile-view */
- 
+ .fa-arrow-circle-up{
+  color: #eb6020;
+  font-size:36px;
+  float: right;
+ }
  .offcanvas-header{ display:none; }
  
  @media (max-width: 992px) {
@@ -6111,3 +6115,5 @@ File: scss
 font-weight: bold;
 font-size: 64px;
    }
+
+  
