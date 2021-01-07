@@ -5912,13 +5912,13 @@ File: scss
        }
      .sidebar-talk{
       font-family: 'Inter';
-      font-style:normal;
+      font-style:normal !important;
       font-weight: 500 !important;
-      font-size: 14px;
-      line-height: 28px;
+      font-size: 14px !important;
+      line-height: 28px !important;
        color: whitesmoke !important;
-      margin-bottom: 5%;
-       border-radius: 6px;
+      margin-bottom: 5% !important;
+       border-radius: 6px !important;
      }
      .sidebar-talk:hover{
      color: whitesmoke !important;
@@ -6049,6 +6049,11 @@ File: scss
  .mbl-nav{
    display: flex;
    align-items: center;
+   padding: 0% !important;
+   margin-left: 8%;
+ }
+ .nav-link{
+   padding: 0% !important;
  }
  .nav-link:hover{
     color: #FF6F2C;
