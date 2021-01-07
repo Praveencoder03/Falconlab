@@ -1885,7 +1885,7 @@ File: scss
    color: #ffffff !important;
    margin-bottom: 0px; }
    .btn-group label.btn-secondary {
-     color: #67757c !important; }
+     color: #313233 !important; }
  
  .btn-lg {
    padding: .75rem 1.5rem;
@@ -1962,7 +1962,7 @@ File: scss
    -o-transition: 0.2s ease-in;
    transition: 0.2s ease-in;
    background-color: #ffffff;
-   color: #67757c;
+   color: #353535;
    border-color: #cccccc; }
    .btn-secondary:hover,
    .btn-secondary.disabled:hover {
@@ -5903,6 +5903,14 @@ File: scss
          justify-content: center;
        }
      .sidebar-talk{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 28px;
+       color: whitesmoke !important;
+      margin-bottom: 5%;
+      
        border-radius: 6px;
        color: whitesmoke;
      }
@@ -5910,33 +5918,38 @@ File: scss
      color: whitesmoke !important;
      }
      .sidebar-schedule{
+      display: inline-block;
        background: rgba(255, 111, 44, 0.1);
      border-radius: 6px;
-     color: #FF6F2C;
+     color: #FF6F2C !important;
      font-family: 'Inter';
      font-style: normal;
      font-weight: 600;
      font-size: 14px;
+     padding: 10px 10px;
      }
      .sidebar-schedule:hover{
-       color: #c04c17 !important;
+       color: white !important;
+       background:#FF6F2C;
      }
      .schedule-btn{
+      color: #FFFFFF !important;
       background: #FF6F2C;
       color: whitesmoke;
       font-family: 'Inter';
       border-radius: 6px;
-      padding: 4px 16px;
+      padding: 10px 10px;
       justify-content: center;
     }
-    
+    .schedule-btn:hover{
+      background: #c04710;
+    }
      .hr-1{
        border: 1px solid #424242;
        width: 80%;
      }
      .active-about{
        color: white;
-       margin-left: 10%;
        background: #424242;
        border-radius: 6px;
        padding: 3%;
