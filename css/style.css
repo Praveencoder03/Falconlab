@@ -70,12 +70,12 @@ File: scss
    color: #67757c;
   }
  
- html {
+ /* html {
    position: relative;
    min-height: 100%;
    background: #E5E5E5;
    -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale; }
+   -moz-osx-font-smoothing: grayscale; } */
  
  a:hover,
  a:focus {
@@ -161,7 +161,6 @@ File: scss
  Blockquote
  *******************/
  html body blockquote {
-   border-left: 5px solid #398bf7;
    border: 1px solid rgba(120, 130, 140, 0.13);
    padding: 15px; }
  
@@ -967,8 +966,10 @@ File: scss
   For all pages 
   ============================================================== */
  #main-wrapper {
-   background-color: #292929;
+   background-color: #292929 !important;
    width: 100%;
+   height: 100% !important;
+   bottom: 0%;
    overflow: hidden; }
  
  .boxed #main-wrapper {
@@ -992,9 +993,13 @@ File: scss
  
  .container-fluid {
    margin-left: 240px;
-   padding-left:11px !important;
-   border-bottom-width: 0% !important;
-   padding: 25px 20px 25px 20px !important;  }
+   background-color: #292929 !important;
+   height: 100%;
+   color: #292929 !important;
+   /* padding-left:11px !important; */
+   /* border-bottom-width: 0% !important; */
+   /* padding: 20px 20px 20px 20px !important; */
+    }
  
  .card {
    margin-bottom: 30px; }
@@ -5690,6 +5695,9 @@ File: scss
   ============================================================== */
  @media (max-width: 767px) {
    .container-fluid {
+    height: 100%;
+    background-color: #292929;
+    bottom: 0%;
      padding: 25px 25px 25px 25px; }
    /*Header*/
    .topbar {
@@ -5904,15 +5912,13 @@ File: scss
        }
      .sidebar-talk{
       font-family: 'Inter';
-      font-style: normal;
-      font-weight: 500;
+      font-style:normal;
+      font-weight: 500 !important;
       font-size: 14px;
       line-height: 28px;
        color: whitesmoke !important;
       margin-bottom: 5%;
-      
        border-radius: 6px;
-       color: whitesmoke;
      }
      .sidebar-talk:hover{
      color: whitesmoke !important;
@@ -5937,12 +5943,14 @@ File: scss
       background: #FF6F2C;
       color: whitesmoke;
       font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
       border-radius: 6px;
       padding: 10px 10px;
       justify-content: center;
     }
     .schedule-btn:hover{
-      background: #c04710;
+      background: #d84a09;
     }
      .hr-1{
        border: 1px solid #424242;
@@ -6090,16 +6098,16 @@ File: scss
  
    /* about-new */
    .about-schedule-link{
-     color: #FF6F2C;
+     color: #FF6F2C !important;
    }
    .about-schedule-link:hover{
-     color: #d15a23;
+     color: #d15a23 !important;
    }
    .about-email-link{
-     color: #FF6F2C;
+     color: #FF6F2C !important;
    }
    .about-email-link:hover{
-     color: #b44816;
+     color: #b44816 !important;
    }
    /* .img-triangle{
      margin-right: 5%;
