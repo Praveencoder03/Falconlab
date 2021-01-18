@@ -5805,6 +5805,22 @@ File: scss
  
  
      /* new-home */
+     .img-trone{
+      position: relative;
+      animation-name: trone;
+      animation-duration: 10s;
+      animation-delay: 2s;
+      animation-direction: alternate; 
+      animation-iteration-count: infinite;
+     }
+     @keyframes trone {
+       0% {right: 0px;top: 0px;}
+       25% {right:400px; top:0px}
+      50% {right:400px; top:200px;}
+      75% {right: 0px; top: 200px;}
+      100% {right: 0px; top: 0px;}
+      
+     } 
      .logo{
  margin-left: 15%;
  margin-bottom: 5%;
@@ -6036,8 +6052,6 @@ File: scss
  }
 
  /* side-transition */
-  
-     
  .sidenav {
      height: 100%;
      width: 0;
@@ -6138,16 +6152,16 @@ File: scss
     }
     .footer-logo{
      padding-top: 28px;
-     margin-bottom: 5%;
+    
     }
     .social-icons
     {
-      margin-left: 65%;
-      padding-top: 28px;
-      margin-bottom: 5%;
+      font-family: monospace;
+      margin-top: -5%;
+     float: right;
     }
    .fa-social{
-     padding-right: 5%;
+     padding: 0%;
    }
    .fa-foot-right {
     transform: rotate(45deg);
@@ -6365,4 +6379,32 @@ font-size: 18px;
   border-top:  2px solid rgba(37,193,111,.15) !important;
   border-top-style: solid;
   border-top-color: rgba(37, 193, 111, 0.15);
+}
+
+/* chatbox */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container .cancel {
+  background-color: red;
+}
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
 }
