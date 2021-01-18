@@ -26,25 +26,29 @@
     <link href="css/colors/default-dark.css" id="theme" rel="stylesheet">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@360&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;792;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/27efe3e5bc.js" crossorigin="anonymous"></script>
     <!-- bootsrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <!-- Custom JS -->
     <script src="./js/nav.js"></script>
+    <script src="./js/curosel.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   
 </head>
 <style>
     body {
-        background: #292929 !important;
+        background-color: #f3f2ef !important;
         font-style: 'Inter';
     }
 </style>
 
-<body class="fix-sidebar card-no-border" style="background-color: #292929;">
+<body class="fix-sidebar card-no-border" style="background-color: #f3f2ef;">
 
     <div id="main-wrapper">
 
@@ -54,16 +58,16 @@
                 <div>
                     <img class="logo" src="assets/images/fal-logo new.svg" />
                 </div>
-                <ul class="sidebar-list">
-                    <li> <a class="waves-effect waves-dark" href="about.html"> About</a></li>
-                    <li> <a class="waves-effect waves-dark" href="#"> Services</a></li>
-                    <li> <a class="waves-effect waves-dark" href="#"> Customers</a></li>
-                    <li> <a class="waves-effect waves-dark" href="#"> Resources</a></li>
-                    <li> <a class="waves-effect waves-dark" href="#"> Insights</a></li>
+                <ul class="sidebar-list"> 
+                    <li> <a class="waves-effect waves-dark fa-sidebar" href="about.html"> About</a></li>
+                    <li> <a class="waves-effect waves-dark fa-sidebar" href="#"> Services</a></li>
+                    <li> <a class="waves-effect waves-dark fa-sidebar" href="#"> Customers</a></li>
+                    <li> <a class="waves-effect waves-dark fa-sidebar" href="#"> Resources</a></li>
+                    <li> <a class="waves-effect waves-dark fa-sidebar" href="#"> Insights</a></li>
                 </ul>
-                <hr class="hr-1" />
+                <!-- <hr class="hr-1" /> -->
                 <div class="ml-4 pl-3 display:flex">
-                    <a href="#" class="ml-3 sidebar-talk">Wish to talk ?</a>
+                    <a href="#" class="waves-effect waves-dark ml-3 sidebar-talk fa-sidebar">Wish to talk ?</a>
                     <a href="#" class="mt-3 sidebar-schedule">Schedule a call</a>
                 </div>
             </nav>
@@ -71,7 +75,7 @@
 
         <!-- Main content  -->
         <div class="page-wrapper" style="padding: 0px;">
-            <div class="container-fluid" style="background-color: #292929;">
+            <div class="container-fluid">
                 <div class="row hidden-lg hidden-md page-titles">
                     <div class="col-sm-12 hidden-lg hidden-md align-self-center">
                         <img src="assets/images/fal-logo new.svg" />
@@ -155,14 +159,407 @@
                             Get meetings with target accounts month on month. Grow your topline by 1 Mill USD and more.
                         </p>
                     </div>
+                    </div>
                 </div>
+
+
+                <!-- Carousel -->
                
+                <div class="container-fluid carousel-container">
+                    <div id="myCarousel" class="carousel testimonial-all-center slide mt-lg" data-ride="carousel" data-interval="0">
+                    
+                        <div class="carousel-inner row" role="listbox" style="padding-right: 22px;"> 
+
+                        <div class="carousel-item col-lg-10 col-md-12 col-sm-12 active">
+                            <div class="fa-card align-self-center">
+                                <div class="row justify-content-center w-100">
+                          <div class="col-lg-12 col-md-12 col-sm-12 justify-content-center w-100">
+                              <div class="row justify-content-center pl-3"> 
+
+                           
+                            <span class="hidden-xs hidden-sm" style="font-size:80px; color: #ff6f2c;"> &#10077; </span> 
+                         <div class="col-lg-10 col-md-10 col-sm-12 mt-5" style="display: flex; justify-content: center;">
+                            <span class="hidden-lg" style="font-size:20px; color: #ff6f2c;margin-right: 5%;"> &#10077; </span> 
+                            <img class="original-image fadeIn" alt="" title="" src="assets/images/logo-black.svg">
+                         <span class="hidden-lg" style="font-size:20px; color: #ff6f2c;">&#10078;</span>
+                        </div>
+                        
+                        <span class="hidden-xs hidden-sm" style="font-size:80px; color: #ff6f2c;">&#10078;</span>
+                        <p class="home-p1 card-p1">“Falconlabs looking for a new tool in Wordpress and were keen to get one in place and optimised ahead of the Christmas peak period. Falconlabs ensured that the implementation process was as smooth as possible, and the team were up and running within 48 hours.”</p>
+                           
+                        </div>
+                               
+                  <div> <hr class="card-hr" /></div>
+
+                         <div class="row justify-content-center ml-5 pl-5">
+                            <div class="col-lg-2 col-sm-10 p-0">
+                                <div class="card-avatar">
+                             <img src="assets/images/logo.svg" alt="Avatar" class="avatar">
+                            </div> </div> 
+                            <div class="col-lg-6 author-bio">
+                                <h6 class="author-name pr-5">Vaughan Potter</h6>
+                                <div class="author-designation">Head of Customer Services</div>
+                                <div class="author-company">Hamleys</div>
+                            </div>
+                            </div> 
+                        </div>
+                         
+                    </div>
+                    
+                        </div>
+                        <div class="card falink">
+                        <div class="col-lg-12 col-sm-10 mt-4 mb-4" style="width: 100%;">
+                            <a href="#" class="fa-dwn-p1">Read full case study  <i class="fa fa-arrow-right"></i></a>
+                    </div>  
+                </div>
+                        
+                    </div>
+                       
+
+
+                    <div class="carousel-item col-lg-10 col-md-12 col-sm-12">
+                        <div class="fa-card align-self-center">
+                            <div class="row justify-content-center w-100">
+                      <div class="col-lg-12 col-md-12 col-sm-12 justify-content-center w-100">
+                          <div class="row justify-content-center pl-3"> 
+
+                       
+                        <span class="hidden-xs hidden-sm" style="font-size:80px; color: #ff6f2c;"> &#10077; </span> 
+                     <div class="col-lg-10 col-md-10 col-sm-12 mt-5" style="display: flex; justify-content: center;">
+                        <span class="hidden-lg" style="font-size:20px; color: #ff6f2c;margin-right: 5%;"> &#10077; </span> 
+                        <img class="original-image fadeIn" alt="" title="" src="assets/images/logo-black.svg">
+                     <span class="hidden-lg" style="font-size:20px; color: #ff6f2c;">&#10078;</span>
+                    </div>
+                    
+                    <span class="hidden-xs hidden-sm" style="font-size:80px; color: #ff6f2c;">&#10078;</span>
+                    <p class="home-p1 card-p1">“Falconlabs looking for a new tool in Wordpress and were keen to get one in place and optimised ahead of the Christmas peak period. Falconlabs ensured that the implementation process was as smooth as possible, and the team were up and running within 48 hours.”</p>
+                       
+                    </div>
+                           
+              <div> <hr class="card-hr" /></div>
+
+                     <div class="row justify-content-center ml-5 pl-5">
+                        <div class="col-lg-2 col-sm-10 p-0">
+                            <div class="card-avatar">
+                         <img src="assets/images/logo.svg" alt="Avatar" class="avatar">
+                        </div> </div> 
+                        <div class="col-lg-6 author-bio">
+                            <h6 class="author-name pr-5">Vaughan Potter</h6>
+                            <div class="author-designation">Head of Customer Services</div>
+                            <div class="author-company">Hamleys</div>
+                        </div>
+                        </div> 
+                    </div>
+                     
+                </div>
+                
+                    </div>
+                    <div class="card falink">
+                    <div class="col-lg-12 col-sm-10 mt-4 mb-4" style="width: 100%;">
+                        <a href="#" class="fa-dwn-p1">Read full case study  <i class="fa fa-arrow-right"></i></a>
+                </div>  
+            </div>
+                    
+                </div>
+                      
+                <div class="carousel-item col-lg-10 col-md-12 col-sm-12">
+                    <div class="fa-card align-self-center">
+                        <div class="row justify-content-center w-100">
+                  <div class="col-lg-12 col-md-12 col-sm-12 justify-content-center w-100">
+                      <div class="row justify-content-center pl-3"> 
+
+                   
+                    <span class="hidden-xs hidden-sm" style="font-size:80px; color: #ff6f2c;"> &#10077; </span> 
+                 <div class="col-lg-10 col-md-10 col-sm-12 mt-5" style="display: flex; justify-content: center;">
+                    <span class="hidden-lg" style="font-size:20px; color: #ff6f2c;margin-right: 5%;"> &#10077; </span> 
+                    <img class="original-image fadeIn" alt="" title="" src="assets/images/logo-black.svg">
+                 <span class="hidden-lg" style="font-size:20px; color: #ff6f2c;">&#10078;</span>
+                </div>
+                
+                <span class="hidden-xs hidden-sm" style="font-size:80px; color: #ff6f2c;">&#10078;</span>
+                <p class="home-p1 card-p1">“Falconlabs looking for a new tool in Wordpress and were keen to get one in place and optimised ahead of the Christmas peak period. Falconlabs ensured that the implementation process was as smooth as possible, and the team were up and running within 48 hours.”</p>
+                   
+                </div>
+                       
+          <div> <hr class="card-hr" /></div>
+
+                 <div class="row justify-content-center ml-5 pl-5">
+                    <div class="col-lg-2 col-sm-10 p-0">
+                        <div class="card-avatar">
+                     <img src="assets/images/logo.svg" alt="Avatar" class="avatar">
+                    </div> </div> 
+                    <div class="col-lg-6 author-bio">
+                        <h6 class="author-name pr-5">Vaughan Potter</h6>
+                        <div class="author-designation">Head of Customer Services</div>
+                        <div class="author-company">Hamleys</div>
+                    </div>
+                    </div> 
+                </div>
+                 
+            </div>
+            
+                </div>
+                <div class="card falink">
+                <div class="col-lg-12 col-sm-10 mt-4 mb-4" style="width: 100%;">
+                    <a href="#" class="fa-dwn-p1">Read full case study  <i class="fa fa-arrow-right"></i></a>
+            </div>  
+        </div>
+                
+            </div>
+
+            <div class="carousel-item col-lg-10 col-md-12 col-sm-12">
+                <div class="fa-card align-self-center">
+                    <div class="row justify-content-center w-100">
+              <div class="col-lg-12 col-md-12 col-sm-12 justify-content-center w-100">
+                  <div class="row justify-content-center pl-3"> 
+
+               
+                <span class="hidden-xs hidden-sm" style="font-size:80px; color: #ff6f2c;"> &#10077; </span> 
+             <div class="col-lg-10 col-md-10 col-sm-12 mt-5" style="display: flex; justify-content: center;">
+                <span class="hidden-lg" style="font-size:20px; color: #ff6f2c;margin-right: 5%;"> &#10077; </span> 
+                <img class="original-image fadeIn" alt="" title="" src="assets/images/logo-black.svg">
+             <span class="hidden-lg" style="font-size:20px; color: #ff6f2c;">&#10078;</span>
+            </div>
+            
+            <span class="hidden-xs hidden-sm" style="font-size:80px; color: #ff6f2c;">&#10078;</span>
+            <p class="home-p1 card-p1">“Falconlabs looking for a new tool in Wordpress and were keen to get one in place and optimised ahead of the Christmas peak period. Falconlabs ensured that the implementation process was as smooth as possible, and the team were up and running within 48 hours.”</p>
+               
+            </div>
+                   
+      <div> <hr class="card-hr" /></div>
+
+             <div class="row justify-content-center ml-5 pl-5">
+                <div class="col-lg-2 col-sm-10 p-0">
+                    <div class="card-avatar">
+                 <img src="assets/images/logo.svg" alt="Avatar" class="avatar">
+                </div> </div> 
+                <div class="col-lg-6 author-bio">
+                    <h6 class="author-name pr-5">Vaughan Potter</h6>
+                    <div class="author-designation">Head of Customer Services</div>
+                    <div class="author-company">Hamleys</div>
+                </div>
+                </div> 
+            </div>
+             
+        </div>
+        
+            </div>
+            <div class="card falink">
+            <div class="col-lg-12 col-sm-10 mt-4 mb-4" style="width: 100%;">
+                <a href="#" class="fa-dwn-p1">Read full case study  <i class="fa fa-arrow-right"></i></a>
+        </div>  
+    </div>
+            
+        </div>
+
+                    </div>
+                   
+                      <a class="carousel-control-prev hidden-xs hidden-sm" href="#myCarousel" role="button" data-slide="prev">
+                        <i class="fas fa-arrow-circle-left" style="color: black;font-size: 50px;"></i>
+                      </a>
+                      <a class="carousel-control-prev hidden-lg" href="#myCarousel" role="button" data-slide="prev">
+                        <i class="fas fa-arrow-circle-left" style="color: black;font-size: 30px;"></i>
+                      </a>
+                 
+                      <a class="carousel-control-next hidden-xs hidden-sm" href="#myCarousel" role="button" data-slide="next">
+                        <i class="fas fa-arrow-circle-right" style="color: black;font-size: 50px;"></i>
+                      </a>
+                      <a class="carousel-control-next hidden-lg pr-4" href="#myCarousel" role="button" data-slide="next">
+                        <i class="fas fa-arrow-circle-right" style="color: black;font-size: 30px;"></i>
+                      </a>
+                      
+                    
+
+                      <div class="row mt-5">
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active fa-indicator"></li>
+                          <li data-target="#myCarousel" data-slide-to="1" class="fa-indicator"></li>
+                          <li data-target="#myCarousel" data-slide-to="2" class="fa-indicator"></li>
+                          <li data-target="#myCarousel" data-slide-to="3" class="fa-indicator"></li>
+                        </ol>
+                    </div>
+
+                </div>
+                    </div>
+                 
+                 
+
+           <div class="container-fluid fa-back-img">
                 <div class="row">
-                    <div class="col-sm-12 hidden-lg hidden-md" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+                    <div class="col-lg-12 col-md-12 ">
+                        <h2 class="fa-img-h2">Try us. You will love the Falconlabs experience.</h2>
+                    <p class="fa-img-p2">Start your 21-day free trial. No credit card required. No strings attached. <br><br><a class="fa-img-btn " href="#"> SIGNUP FOR FREE</a></p>  
+                </div>
+                </div>
+           </div>
+
+              <div class="fa-foot-hr">
+                <hr  style="border:1px solid #757575;"/>
+              </div>
+              
+              <div class="container-fluid">
+                <footer class="fa-footer">
+                <div class="row">
+                          <div class="col-lg-3 col-md-12">
+                            <ul class="fl-footUl">
+                                
+                                <li class="fl-footHead">      
+                                    <div class="fa-foot-right" style="margin-left: 1%;">
+                                        <div class="fa-foot-arrow"></div> </div>
+                                    <a href="#" >Product</a>
+                               
+                                </li>
+                           
+                                <li class="fl-footsub">
+                                    <a  href="#">Subscription Management
+                                    </a>
+                                </li>
+                                <li  class="fl-footsub">
+                                    <a href="#">Recurring Billing and Invoicing
+                                    </a>
+                                </li>
+                                <li  class="fl-footsub">
+                                    <a href="#"> Recurring Payments</a>
+                                </li>
+                                <li  class="fl-footsub">
+                                    <a href="#">Accounting and Taxes</a>
+                                </li>
+                                <li class="fl-footsub">
+                                    <a  href="#">SaaS Reporting</a>
+                                   
+                                </li>
+                                <li  class="fl-footsub">
+                                    <a href="#">Enterprise Billing</a>
+                                </li>
+                                <li class="fl-footsub" > 
+                                    <a href="#">Integrations</a>
+                                </li>
+                            </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                      <ul class="fl-footUl">
+                          <li class="fl-footHead">
+                            <div class="fa-foot-right" style="margin-left: 28%;">
+                                <div class="fa-foot-arrow"></div> </div>
+                              <a  href="#">Help & Support</a>
+                          </li>
+                          <li class="fl-footsub">
+                              <a  href="#">Security </a>
+                             
+                          </li>
+                          <li class="fl-footsub">
+                              <a  href="#">FAQs </a>
+                             
+                          </li>
+                          <li class="fl-footsub">
+                              <a  href="#">Status</a>
+                          </li>
+                          <li class="fl-footsub">
+                              <a  href="#">Product Documentation</a>
+                          </li>
+                          <li class="fl-footsub">
+                              <a  href="#">API Documentation</a>
+                             
+                          </li>
+                          <li class="fl-footsub">
+                              <a  href="#"> Supported Payment Gateways</a>
+                          </li>
+                          <li class="fl-footsub">
+                              <a  href="#">Sitemap</a>
+                          </li>
+                      </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-12">
+                <ul class="fl-footUl">
+                    <li class="fl-footHead">
+                        <div class="fa-foot-right" style="margin-left: 12%;">
+                            <div class="fa-foot-arrow"></div> </div>
+                        <a  href="#">Resources</a>
+                    </li>
+                    <li class="fl-footsub">
+                        <a  href="#">Blog</a>
+                    </li>
+                    <li class="fl-footsub">
+                        <a  href="#">Compare Payment Gateways</a>
+                    </li>
+                    <li class="fl-footsub">
+                        <a  href="#">Tackling Payment Failures</a>
+                    </li>
+                    <li class="fl-footsub">
+                        <a  href="#">Enterprise Billing Guide</a>
+                    </li>
+                    <li class="fl-footsub">
+                        <a  href="#">Webinars</a>
+                    </li>
+                    <li class="fl-footsub">
+                        <a href="#">Glossaries</a>
+                    </li>
+                </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12">
+            <ul class="fl-footUl">
+                <li class="fl-footHead">
+                    <div class="fa-foot-right" style="margin-left: 6%;">
+                        <div class="fa-foot-arrow"></div> </div>
+                    <a href="#">Company</a>
+                </li>
+                <li class="fl-footsub">
+                    <a  href="#">Customers</a>
+                </li>
+                <li class="fl-footsub">
+                    <a  href="#">Partners</a>
+                </li>
+                <li  class="fl-footsub">
+                    <a href="#">Careers</a>
+                </li>
+                <li class="fl-footsub">
+                    <a  href="#">Press</a>
+                </li>
+                <li class="fl-footsub">
+                    <a  href="#">Terms</a>
+                   
+                </li>
+                <li class="fl-footsub">
+                    <a  href="#">Privacy</a>
+                </li>
+            </ul>
+    </div>
+</div>
+
+    <div class="row">
+    <div class="col-lg-6 col-md-12">
+        <div class="footer-logo">
+            <a href="#" class="pl-6 "><img src="assets/images/fal-logo new.svg" /></a>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+             <div class="social-icons  pr-8 pt-15">
+            <a href="#" class="fa-social"><i class="fa fa-lg fa-facebook"></i></a>
+            <a href="#" class="fa-social"><i class="fa fa-lg fa-twitter"></i></a>
+            <a href="#" class="fa-social"><i class="fa fa-lg fa-youtube-play"></i></a>
+            <a href="#" class="fa-social"><i class="fa fa-lg fa-linkedin"></i></a>
+            </div>
+  </div>
+
+    </div>
+                </footer>
+                </div>
+                
+            </div>
+            <!-- wrapper-ends -->
+         
+               <!-- End Main Content -->
+
+                <div class="row mb-5">
+                    <div class="col-sm-12" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
                         <i class="fa fa-arrow-circle-up mb-5"></i>
                 </div>
             </div>
-          <!-- End Main Content -->
+
+          
 
 
             <!-- mobile-view -->
@@ -212,10 +609,11 @@
                     <a href="#">Insights</a>
                 </div>
             </div>
+            
         </div>
         <!-- main content ends -->
-    </div>
-    <!-- End Wrapper -->
+    
+
 </body>
 
 </html>
