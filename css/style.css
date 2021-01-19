@@ -5819,7 +5819,6 @@ File: scss
       50% {right:300px; top:300px;}
       75% {right: 50px; top: 200px;}
       100% {right: 0px; top: 0px;}
-      
      } 
      .logo{
  margin-left: 15%;
@@ -6092,6 +6091,15 @@ File: scss
    }
  
    /* about-new */
+      .transform-cone{
+        position: relative;
+        animation-delay: 2s;
+        animation: cone 100s infinite;
+        transform-origin: 50% 50%;
+      }
+      @keyframes cone {
+        0% {transform: rotate(5000deg); }
+        }
    .about-schedule-link{
      color: #FF6F2C !important;
    }
