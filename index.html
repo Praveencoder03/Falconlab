@@ -27,6 +27,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;792;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet prefetch" href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
+    <link rel="https://cdn.rawgit.com/mfd/7c7a915eb31474cc8c6a65066a4c4dc3/raw/f0f2fb94c21dea904812a53e0eb6cf0bc87f3754/GTWalsheimPro.css">
     <script src="https://kit.fontawesome.com/27efe3e5bc.js" crossorigin="anonymous"></script>
     <!-- bootsrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
@@ -58,12 +60,58 @@
             <nav class="sidebar-nav">
                 <div>
                     <a href="index.html">
-                        <img class="logo" src="assets/images/og-logo.svg" /></a>
+                    <img class="logo" src="assets/images/og-logo.svg" /></a>
                 </div>
-                <ul class="sidebar-list"> 
-                    <li> <a class="waves-effect waves-dark fa-sidebar" href="about.html"> About Us</a></li>
-                    <li> <a class="waves-effect waves-dark fa-sidebar" href="#"> Services</a></li>
-                    <li> <a class="waves-effect waves-dark fa-sidebar" href="#"> Our Works</a></li>
+                <ul class="sidebar-list">
+                    <li> <a class="waves-effect waves-dark fa-sidebar" href="about.html">About Us</a></li>
+                    <!-- <li> <a class="" href="#"> Services</a></li> -->
+                  <a href="#" class="waves-effect waves-dark fa-sidebar dropdown-btn"><span class="service-tab">Services ▾</span>
+                   
+                  </a>
+                      <div class="dropdown-container">
+                        <button class="waves-effect waves-dark fa-sidebar dropdown-btn"><span class="service-drop">Website Developement <i class="fa fa-caret-down"></i></span>
+                          </button>
+                          <div class="dropdown-container-inner">
+                            <a href="code-based.html" class="waves-effect waves-dark fa-sidebar" href="#"><i class="fas fa-code"></i> Code Based</a><br>
+                            <a class="waves-effect waves-dark fa-sidebar" href="#"><i class="fab fa-wordpress"></i> Wordpress based</a><br>
+                            <a class="waves-effect waves-dark fa-sidebar" href="#"><i class="fas fa-mobile"></i> Mobile Application</a><br>
+                        </div>
+                        
+                        <button class="waves-effect waves-dark fa-sidebar dropdown-btn"><span class="service-drop">E-Commerce<i class="fa fa-caret-down"></i></span>
+                          </button>
+                          <div class="dropdown-container-inner">
+                            <a class="waves-effect waves-dark fa-sidebar" href="#"><i class="fas fa-shopping-cart"></i> Shopping App</a><br>
+                            <a class="waves-effect waves-dark fa-sidebar" href="#"><i class="fas fa-browser"></i> Woo-Commerce</a><br>
+                            <a class="waves-effect waves-dark fa-sidebar" href="#"><i class="fas fa-mobile"></i> Mobile Application</a><br>
+                        </div>
+                     
+                        <button class="waves-effect waves-dark fa-sidebar dropdown-btn"><span class="service-drop">Branding<i class="fa fa-caret-down"></i></span>
+                        </button>
+                        <div class="dropdown-container-inner">
+                            <a class="waves-effect waves-dark fa-sidebar" href="#">Website design</a><br>
+                            <a class="waves-effect waves-dark fa-sidebar" href="#">Logo design</a><br>
+                            <a class="waves-effect waves-dark fa-sidebar" href="#">UI/UX design</a><br>
+                            <a class="waves-effect waves-dark fa-sidebar" href="#">Content design</a><br>
+                        </div>
+
+                        <button class="waves-effect waves-dark fa-sidebar dropdown-btn"><span class="service-drop">Hosting<i class="fa fa-caret-down"></i></span>
+                        </button>
+                        <div class="dropdown-container-inner">
+                            <a class="waves-effect waves-dark fa-sidebar" href="#"><i class="fas fa-h-square"></i> Hosting Website</a><br>
+                            <a class="waves-effect waves-dark fa-sidebar" href="#"><i class="fas fa-tasks"></i> Manage Domain</a><br>
+                            <a class="waves-effect waves-dark fa-sidebar" href="#"><i class="fas fa-server"></i> Mapping Server</a><br>
+                        </div>
+
+                        <button class="waves-effect waves-dark fa-sidebar dropdown-btn"><span class="service-drop">Editing<i class="fa fa-caret-down"></i></span>
+                        </button>
+                        <div class="dropdown-container-inner">
+                            <a class="waves-effect waves-dark fa-sidebar" href="#">Ghraphic Design</a><br>
+                            <a class="waves-effect waves-dark fa-sidebar" href="#">Vedio Editing</a><br>
+                            <a class="waves-effect waves-dark fa-sidebar" href="#">Banner Design</a><br>
+                        </div>
+                    </div>   
+
+                    <li> <a class="waves-effect waves-dark fa-sidebar" href="#"> Our works</a></li>
                     <li> <a class="waves-effect waves-dark fa-sidebar" href="#"> Testimonial</a></li>
                     <li> <a class="waves-effect waves-dark fa-sidebar" href="#"> Blog</a></li>
                     <li> <a class="waves-effect waves-dark fa-sidebar" href="#"> Careers</a></li>
@@ -71,8 +119,8 @@
                 </ul>
                 <!-- <hr class="hr-1" /> -->
                 <!-- <div class="ml-4 pl-3 display:flex">
-                    <a href="#" class="waves-effect waves-dark ml-3 sidebar-talk fa-sidebar">Wish to talk ?</a>
-                    <a href="#" class="mt-3 sidebar-schedule">Schedule a call</a>
+                    <a  class="waves-effect waves-dark ml-3 sidebar-talk fa-sidebar" href="#">Wish to talk ?</a>
+                    <a class="mt-3 sidebar-schedule"  href="#">Schedule a call</a>
                 </div> -->
             </nav>
         </aside>
@@ -129,7 +177,7 @@
 
                     <div class="col-lg-4 col-md-12">
                         <div>
-                            <h3 class="h3-2-home">Generate quality leads</h3>
+                            <h3 class="home-h3">Generate quality leads</h3>
                             <p class="home-p1">
                                 Define your GTM strategy
                                 EstablishLinkedIn authority
@@ -143,7 +191,7 @@
 
                     <div class="col-lg-4 col-md-12">
                         <div style="margin-bottom: 18%;">
-                            <h3 class="h3-3-home">Drive inbound leads</h3>
+                            <h3 class="home-h3">Drive inbound leads</h3>
                             <p class="home-p1">
                                 Supercharge your SEO
                                 Create towering content
@@ -625,7 +673,52 @@
                 <div class="mt-5">
                     <a class="active" href="index.html">Home</a>
                     <a class="active" href="about.html">About Us</a>
-                     <a href="#">Services</a>
+                    <a href="#" class="dropdown-btn-1">Services ▾
+                   
+                    </a>
+                        <div class="dropdown-container">
+                          <button class="waves-effect waves-dark fa-sidebar dropdown-btn-1"><span class="service-drop">Website Developement <i class="fa fa-caret-down"></i></span>
+                            </button>
+                            <div class="dropdown-container-inner">
+                              <a href="code-based.html" class="waves-effect waves-dark fa-sidebar" href="#">Code Based</a><br>
+                              <a class="waves-effect waves-dark fa-sidebar" href="#">Wordpress based</a><br>
+                              <a  class="waves-effect waves-dark fa-sidebar" href="#">Mobile Application</a><br>
+                          </div>
+                          
+                          <button class="waves-effect waves-dark fa-sidebar dropdown-btn-1"><span class="service-drop">E-Commerce<i class="fa fa-caret-down"></i></span>
+                            </button>
+                            <div class="dropdown-container-inner">
+                              <a class="waves-effect waves-dark fa-sidebar" href="#">Shopping App</a><br>
+                              <a class="waves-effect waves-dark fa-sidebar" href="#">Woo-Commerce</a><br>
+                              <a  class="waves-effect waves-dark fa-sidebar" href="#">Mobile Application</a><br>
+                          </div>
+                       
+                          <button class="waves-effect waves-dark fa-sidebar dropdown-btn-1"><span class="service-drop">Branding<i class="fa fa-caret-down"></i></span>
+                          </button>
+                          <div class="dropdown-container-inner">
+                              <a class="waves-effect waves-dark fa-sidebar" href="#">Website design</a><br>
+                              <a  class="waves-effect waves-dark fa-sidebar" href="#">Logo design</a><br>
+                              <a  class="waves-effect waves-dark fa-sidebar" href="#">UI/UX design</a><br>
+                              <a  class="waves-effect waves-dark fa-sidebar" href="#">Content design</a><br>
+                          </div>
+  
+                          <button class="waves-effect waves-dark fa-sidebar dropdown-btn-1"><span class="service-drop">Hosting<i class="fa fa-caret-down"></i></span>
+                          </button>
+                          <div class="dropdown-container-inner">
+                              <a class="waves-effect waves-dark fa-sidebar" href="#">Hosting Website</a><br>
+                              <a class="waves-effect waves-dark fa-sidebar" href="#">Manage Domain</a><br>
+                              <a class="waves-effect waves-dark fa-sidebar" href="#">Mapping Server</a><br>
+                          </div>
+  
+                          <button class="waves-effect waves-dark fa-sidebar dropdown-btn-1"><span class="service-drop">Editing<i class="fa fa-caret-down"></i></span>
+                          </button>
+                          <div class="dropdown-container-inner">
+                              <a class="waves-effect waves-dark fa-sidebar" href="#">Ghraphic Design</a><br>
+                              <a class="waves-effect waves-dark fa-sidebar" href="#">Vedio Editing</a><br>
+                              <a class="waves-effect waves-dark fa-sidebar" href="#">Banner Design</a><br>
+                          </div>
+                      </div>   
+                    
                     <a href="#">Our Works</a>
                     <a href="#">Testimonial</a>
                     <a href="#">Blog</a>
@@ -636,7 +729,41 @@
        
         </div>
         <!-- main content ends -->
-       
+        <script>
+            
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var dropdownContent = this.nextElementSibling;
+              if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+              } else {
+              dropdownContent.style.display = "block";
+              }
+              });
+            }
+            </script>
+
+        <script>
+            
+            var dropdown = document.getElementsByClassName("dropdown-btn-1");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var dropdownContent = this.nextElementSibling;
+              if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+              } else {
+              dropdownContent.style.display = "block";
+              }
+              });
+            }
+            </script>
 </body>
 
 </html>
